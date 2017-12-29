@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+/* ========================
+    +++ FLEXBOX +++
+ ======================== */
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ========================
+    +++ PAGE CONTENT +++
+ ======================== */
+
+.main-page {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+
+    background: -moz-linear-gradient(-45deg, #3a8d80 1%, #706386 100%);
+    background: -webkit-linear-gradient(-45deg, #3a8d80 1%, #706386 100%);
+    background: linear-gradient(125deg, #3a8d80 1%, #706386 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a8d80', endColorstr='#706386', GradientType=1);
+}
+
+
+.main-page h1 {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.main-page h2 {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.container-fluid {
+    margin-top: 100px;
+}
+
+.main-page .continue-btn {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: 20px;
+    background: url('../img/ContinueBTN.png') no-repeat;
+    background-size: 40px 22px;
+    background-position: 50% 100%;
+    padding-bottom: 30px;
+    font-size: 0.85em;
+    text-decoration: none;
+    color: #c1c1c1;
+}
+
+#me {
+    font-family: Montserrat, sans-serif;
+    background-color: #eee;
+    color: #000;
+}
+
+.intro {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#me .statement {
+    color: #3e3e3e;
+    font-size: 0.9em;
+    font-weight: 100;
+    padding-top: 15px;
+}
+
+#me .fa {
+	font-size: 45px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#3a8d80, #706386);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#me .title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#me .summary {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #a3a3a3;
+    margin-bottom: 40px;
+}
+
+#sub-footer {
+    font-family: Montserrat, sans-serif;
+/*    background-color: rgba(58, 141, 128, 0.85);*/
+    
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/bulb.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer {
+    font-family: Montserrat, sans-serif;
+    background-color: #252A30;
+    color: #000;
+}
+
+footer .made-by-me {
+    font-size: 0.8em;
+    color: #a3a3a3;
+    margin-bottom: 20px;
+}
+
+footer img {
+	display: block;
+	width: 13em;
+	height: auto;
+    margin-bottom: 30px;
+    filter: invert(100);
+}
+
+/* ========================
+    +++ PAGE ITEMS +++
+ ======================== */
+
+.hire-btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 30px;
+    margin-top: 3em;
+    border: 2px solid #F9DA67;
+    border-radius: 50px;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* smooth reverse effect */
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.hire-btn:hover {
+    text-decoration: none;
+    background-color: #F9DA67;
+    color: #000;
+    padding: 10px 40px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.get-started-btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e2e2e2;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 10px 30px;
+    margin-top: 3em;
+    margin-bottom: 40px;
+    border: 2px solid #F9DA67;
+    border-radius: 50px;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* smooth reverse effect */
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.get-started-btn:hover {
+    text-decoration: none;
+    background-color: #F9DA67;
+    color: #000;
+    padding: 10px 40px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+    
+footer .fa {
+    color: #9d9d9d;
+    background-color: #21252a;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .fa:hover {
+    background-color: #1a1d23;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+m-auto {
+    margin-left: 0 auto;
+}
+
+
+    
+/* ========================
+    +++ MEDIA QUERIES +++
+ ======================== */
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) {
+        ...
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        
+        .main-page h1 {
+            font-size: 5em;
+        }
+        
+        .main-page h2 {
+            font-size: 2em;
+        }
+        
+        .main-page .continue-btn {
+            font-size: 1em;
+            background-size: 45px 25px;
+        }
+        
+        #sub-footer .intro {
+            font-size: 1.8em;
+        }
+        
+        #sub-footer .statement {
+            font-size: 1.2em;
+        }
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+
+    }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        ...
+    }
